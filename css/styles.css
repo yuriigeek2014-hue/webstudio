@@ -1,0 +1,129 @@
+:root{
+    --secondary-color: #2F303A;
+    --button-color: #2196F3;
+    --secondary-title-color: #FFFFFF;
+    --title-color: #212121;
+    --text-color: #757575;
+    --third-color: #F5F4FA;
+}
+
+
+body {
+     font-family: "Roboto", sans-serif;
+}
+
+
+.header-link {
+    color: var(--title-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+
+
+.header-item {
+    color: var(--title-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+
+
+
+.title {
+    flex-shrink: 0;
+    color: var(--secondary-title-color);
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.36px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+.button {
+    width: 216.0px;
+    height: 50.0px;
+    border-radius: 4px;
+    background: var(--button-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    color: var(--secondary-title-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+.secondary-title {
+    color: var(--title-color)
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.text {
+    color: var(--text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.second-title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.images {
+    width: 370.0px;
+    height: 294.0px;
+}
+
+
+.third-title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.info {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+
+.footer-item {
+    color: var(--text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71px;
+    letter-spacing: 0.42px;
+}
