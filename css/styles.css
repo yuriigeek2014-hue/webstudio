@@ -19,7 +19,7 @@ body {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1,19;
     letter-spacing: 0.78px;
 }
 
@@ -30,7 +30,7 @@ body {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1,19;
     letter-spacing: 0.78px;
 }
 
@@ -40,7 +40,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1,14;
     letter-spacing: 0.28px;
     text-decoration: none;
 }
@@ -51,7 +51,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1,14;
     letter-spacing: 0.28px;
     text-decoration: none;
 }
@@ -62,7 +62,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1,14;
     letter-spacing: 0.28px;
     text-decoration: none;
 }
@@ -72,7 +72,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1,14;
     letter-spacing: 0.28px;
     text-decoration: none;
 } 
@@ -102,37 +102,28 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1,87;
     letter-spacing: 0.96px;
 }
 
-.secondary-title {
-    color: var(--title-color)
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
 
 .advanteges-text {
     color: var(--text-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1,71;
     letter-spacing: 0.42px;
 }
 
 .advanteges-secondary-title {
     color: var(--title-color);
-    text-align: center;
-    font-size: 36px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+    line-height: 1,14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
 .work-title {
@@ -141,7 +132,7 @@ body {
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1,16;
     letter-spacing: 1.08px;
 }
 
@@ -164,7 +155,7 @@ body {
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1,16;
     letter-spacing: 1.08px;
 }
 
@@ -174,7 +165,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1,18;
     letter-spacing: 0.48px;
 }
 
@@ -184,42 +175,54 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1,18;
     letter-spacing: 0.48px;
 }
 
+.footer-link-1 {
+    color: var(--third-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
 
-.footer-item {
+.footer-link-2 {
     color: var(--text-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
+    text-decoration: none;
 }
 
+.footer-link-3 {
+    color: var(--text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
 
-
-.catalog-link {
+.catalog-button {
     color: var(--title-color);
     text-align: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1,62;
     letter-spacing: 0.48px;
     border-radius: 4px;
     background: #F5F4FA;
 }
 
-
 .products-title {
-    color: var(--title-color)
+    color: var(--title-color);
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 1.08px;
 }
-
 
 .products-text {
     color: var(--text-color);
@@ -227,6 +230,6 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1,87;
     letter-spacing: 0.48px;
 }
