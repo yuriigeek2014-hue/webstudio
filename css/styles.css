@@ -12,10 +12,6 @@ body {
      font-family: "Roboto", sans-serif;
 }
 
-ul {
-    padding: 0;
-}
-
 .header-container {
     display: flex;
     align-items: center;
@@ -27,10 +23,6 @@ ul {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.header-logo {
-    text-decoration: none;
 }
 
 .header-logo-web {
@@ -72,7 +64,6 @@ ul {
     flex-direction: row;
     row-gap: 50px;
     column-gap: 25px;
-    list-style: none;
     
 }
 
@@ -84,7 +75,6 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.28px;
     text-decoration: none;
-    list-style: none;
 }
 
 
@@ -103,7 +93,6 @@ ul {
     flex-direction: row;
     row-gap: 50px;
     column-gap: 25px;
-    list-style: none;
 } 
 
 
@@ -183,7 +172,6 @@ ul {
 .advanteges-content {
     display: flex;
     justify-content: space-between;
-    list-style: none;
 }
 
 .advanteges-item {
@@ -229,7 +217,6 @@ ul {
 .work-list {
     display: flex;
     justify-content: space-between;
-    list-style: none;
 }
 
 .work-item {
@@ -324,7 +311,6 @@ ul {
 }
 
 .footer-list {
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 5px;
