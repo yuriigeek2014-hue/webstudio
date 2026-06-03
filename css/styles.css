@@ -12,6 +12,26 @@ body {
      font-family: "Roboto", sans-serif;
 }
 
+ul {
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-box-one {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo {
+    text-decoration: none;
+}
 
 .header-logo-web {
     color: var(--button-color);
@@ -34,6 +54,27 @@ body {
     letter-spacing: 0.78px;
 }
 
+.header {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    row-gap: 93px, 344px;
+}
+
+.header-nav-list {
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+    column-gap: 25px;
+    list-style: none;
+    
+}
 
 .header-nav-link {
     color: var(--title-color);
@@ -43,6 +84,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.28px;
     text-decoration: none;
+    list-style: none;
 }
 
 
@@ -55,6 +97,14 @@ body {
     letter-spacing: 0.28px;
     text-decoration: none;
 }
+
+.header-info-list {
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+    column-gap: 25px;
+    list-style: none;
+} 
 
 
 .header-info-item {
@@ -75,21 +125,40 @@ body {
     line-height: 1.14;
     letter-spacing: 0.28px;
     text-decoration: none;
+    display: flex;
+    justify-content: end;
 } 
-       
 
+       
+.hero {
+    background-color: var(--secondary-color);
+    height: 600px;
+}
+
+.hero-container {
+    height: 600px;
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .hero-title {
+    width: 696.0px;
+    height: 120.0;
     flex-shrink: 0;
     color: var(--secondary-title-color);
     text-align: center;
     font-size: 44px;
     font-style: normal;
     font-weight: 900;
-    line-height: 1.36px;
+    line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
 }
+
 .hero-button {
     width: 216.0px;
     height: 50.0px;
@@ -106,6 +175,20 @@ body {
     letter-spacing: 0.96px;
 }
 
+.advaneges-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.advanteges-content {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.advanteges-item {
+    width: 270px;
+}
 
 .advanteges-text {
     color: var(--text-color);
@@ -126,6 +209,13 @@ body {
     text-transform: uppercase;
 }
 
+.work-container {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .work-title {
     color:var(--title-color);
     text-align: center;
@@ -136,17 +226,41 @@ body {
     letter-spacing: 1.08px;
 }
 
-.images {
-    width: 370.0px;
-    height: 294.0px;
+.work-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
 
-
-.work-images {
-    width: 270.0px;
-    height: 260.0px;
+.work-item {
+    width: 370px;
+    height: 294px;
 }
 
+.team-container {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-item {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--third-color);
+}
+
+.team-item-text {
+    display: flex;
+    flex-direction: column;
+}
 
 .team-title {
     color: #212121;
@@ -177,6 +291,43 @@ body {
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    padding: 60px 0;
+}
+
+.footer-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.footer-logo-web {
+    color: var(--button-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.78px;
+}
+
+.footer-logo-studio {
+    color: var(--secondary-title-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.78px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .footer-link-1 {
