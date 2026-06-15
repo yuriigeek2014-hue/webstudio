@@ -12,11 +12,21 @@ body {
      font-family: "Roboto", sans-serif;
 }
 
-.header-container {
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    outline: 3px solid red;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .header-box-one {
@@ -124,9 +134,8 @@ body {
     height: 600px;
 }
 
-.hero-container {
+.hero .container {
     height: 600px;
-    width: 1170px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -146,6 +155,7 @@ body {
     line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    padding-bottom: 30px;
 }
 
 .hero-button {
@@ -164,14 +174,15 @@ body {
     letter-spacing: 0.96px;
 }
 
-.advaneges-container {
-    width: 1170px;
+.advaneges .container {
     margin: 0 auto;
 }
 
 .advanteges-content {
     display: flex;
     justify-content: space-between;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .advanteges-item {
@@ -185,6 +196,7 @@ body {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    padding-top: 10px;
 }
 
 .advanteges-secondary-title {
@@ -197,8 +209,7 @@ body {
     text-transform: uppercase;
 }
 
-.work-container {
-    width: 1170px;
+.work .container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -212,6 +223,7 @@ body {
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+    padding-bottom: 50px;
 }
 
 .work-list {
@@ -224,11 +236,11 @@ body {
     height: 294px;
 }
 
-.team-container {
-    width: 1170px;
+.team .container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 124px;
 }
 
 .team-list {
@@ -258,6 +270,8 @@ body {
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+    padding-top: 188px;
+    padding-bottom: 50px;
 }
 
 .team-caption {
@@ -268,6 +282,8 @@ body {
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .team-info {
@@ -285,9 +301,12 @@ body {
     padding: 60px 0;
 }
 
-.footer-container {
-    width: 1170px;
+.footer .container {
     margin: 0 auto;
+}
+
+.footer .container .header-logo {
+    padding-bottom: 20px;
 }
 
 .footer-logo-web {

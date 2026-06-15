@@ -1,13 +1,21 @@
-* {
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul,
-ol {
+ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+}
+
+button {
+    border: none;
 }
