@@ -15,7 +15,6 @@ body {
 .container {
     width: 1170px;
     margin: 0 auto;
-    outline: 3px solid red;
     padding-left: 15px;
     padding-right: 15px;
 }
