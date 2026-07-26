@@ -10,10 +10,17 @@ a {
 
 img {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,h2,h3,p {
     margin: 0;
+}
+
+address {
+    font-style: none;
 }
 
 button {
