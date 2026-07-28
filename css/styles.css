@@ -384,6 +384,12 @@ body {
     background-color: var(--secondary-title-color);
 }
 
+.team-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 @keyframes zoomCard {
     from {
         transform: scale(1);
@@ -654,6 +660,11 @@ body {
     .hero-title {
         width: 360px; 
     }
+
+    .team-image {
+        width: 450px;
+        height: auto;
+    }
 }
 
 @media (min-width:768px) {
@@ -740,8 +751,17 @@ body {
         letter-spacing: 2.64px;  
     }
 
+    .advanteges {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
     .advanteges-item {
         width: calc((100% - 90px) / 4);
+    }
+
+    .advanteges-text {
+        max-width: 430px;
     }
 
     .work {
