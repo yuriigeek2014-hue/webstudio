@@ -541,9 +541,9 @@ body {
 
 .catalog-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
+    justify-content: flex-start;
     margin-bottom: 34px;
 }
 
@@ -570,13 +570,12 @@ body {
 .products-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px;
 }
 
 .products-item {
-    width: 370px;
-    border: 1px solid #EEE;
+    width:100%;
+    border:  1px solid #EEE;
     cursor: pointer;
     background-color: var(--secondary-title-color);
     box-shadow: 0 8px 24px rgba(0,0,0,.12);
@@ -602,8 +601,9 @@ body {
 }
 
 .products-image {
-    width: 370px;
-    height: 264px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .ower {
@@ -715,6 +715,14 @@ body {
     .team-item {
         width: calc((100% - 30px) / 2);
     }
+
+    .catalog-list {
+        justify-content: center;
+    }
+
+    .products-item{
+        width:calc((100% - 30px)/2);
+    }
 }
 
 @media (min-width:1200px) {
@@ -793,5 +801,13 @@ body {
 
     .footer-list {
         align-items: flex-start;
+    }
+
+    .catalog-list {
+        justify-content: center;
+    }
+
+    .products-item{
+        width:calc((100% - 60px)/3);
     }
 }
