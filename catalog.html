@@ -12,10 +12,18 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
+        <header class="header">
+        <input type="checkbox" class="check" id="modal-toggle">
         <div class="container">
             <div class="header-box-one">
-                <a href="./index.html" class="header-logo">Web<span class="logo-accent">Studio</span></a>
+                <div class="burger-menu">
+                    <a href="./index.html" class="header-logo">
+                        Web<span class="logo-accent">Studio</span>
+                    </a>
+                    <label for="modal-toggle">
+                        <img src="./images/menu_40px.png" alt="menu">
+                    </label>
+                </div>
                 <nav class="header-navigation">
                     <ul class="header-nav-list">
                         <li class="header-nav-item">
@@ -37,6 +45,54 @@
                     </li>
                     <li class="header-info-item">
                         <a href="#" class="header-info-link">+38-096-111-11-11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="backdrop">
+            <div class="modal">
+                <label for="modal-toggle" class="close">
+                    <img src="./images/close_40px.png" alt="close">
+                </label>
+                <nav class="mobile-menu">
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-item">
+                            <a href="./index.html" class="mobile-menu-link">
+                                Студія
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="./catalog.html" class="mobile-menu-link mobile-menu-link-current">
+                                Портфоліо
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="#" class="mobile-menu-link">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-contacts">
+                    <a href="#" class="mobile-phone">
+                        +38 096 111 11 11
+                    </a>
+                    <a href="#" class="mobile-email">
+                        info@devstudio.com
+                    </a>
+                </div>
+                <ul class="mobile-social-list">
+                    <li class="mobile-social-item">
+                        <a href="#" class="mobile-social-link">Instagram</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="#" class="mobile-social-link">Twitter</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="#" class="mobile-social-link">Facebook</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="#" class="mobile-social-link">LinkedIn</a>
                     </li>
                 </ul>
             </div>
