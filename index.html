@@ -98,11 +98,44 @@
             </div>
         </div>
     </header>
+    <div class="contact-backdrop" data-modal>
+        <div class="contact-modal">
+            <button type="button" class="contact-close" data-modal-close aria-label="Закрити"><img src="./images/close_40px.png" alt="close"></button>
+            <h2 class="contact-title">
+                Залиште свої дані, ми вам передзвонимо
+            </h2>
+            <form class="contact-form">
+                <label class="contact-label">
+                    <span class="contact-label-text">Ім'я</span>
+                    <input type="text" name="name" class="contact-input">
+                </label>
+                <label class="contact-label">
+                    <span class="contact-label-text">Телефон</span>
+                    <input type="tel" name="phone" class="contact-input">
+                </label>
+                <label class="contact-label">
+                    <span class="contact-label-text">Пошта</span>
+                    <input type="email" name="email" class="contact-input">
+                </label>
+                <label class="contact-label">
+                    <span class="contact-label-text">Коментар</span>
+                    <textarea name="comment" class="contact-textarea" placeholder="Введіть текст"></textarea>
+                </label>
+                <label class="contact-policy">
+                    <input type="checkbox" name="policy">
+                    <span>Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></span>
+                </label>
+                <button type="submit" class="contact-button">Відправити</button>
+            </form>
+        </div>
+    </div>
     <main class="main">
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>
+                    Замовити послугу
+                </button>
             </div>
         </section>
         <section class="advanteges">
@@ -203,5 +236,34 @@
             </ul>
         </div>
     </footer>
+    <script>
+        const modal = document.querySelector("[data-modal]");
+        const openButton = document.querySelector("[data-modal-open]");
+        const closeButton = document.querySelector("[data-modal-close]");
+
+        openButton.addEventListener("click", () => {
+            modal.classList.add("is-open");
+            document.body.classList.add("modal-open");
+        });
+
+        closeButton.addEventListener("click", () => {
+            modal.classList.remove("is-open");
+            document.body.classList.remove("modal-open");
+        });
+
+        modal.addEventListener("click", event => {
+            if (event.target === modal) {
+                modal.classList.remove("is-open");
+                document.body.classList.remove("modal-open");
+            }
+        });
+
+        document.addEventListener("keydown", event => {
+            if (event.key === "Escape") {
+                modal.classList.remove("is-open");
+                document.body.classList.remove("modal-open");
+            }
+        });
+    </script>
 </body>
 </html>
