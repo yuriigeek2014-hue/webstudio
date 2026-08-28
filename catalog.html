@@ -12,25 +12,25 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-        <header class="header">
-        <input type="checkbox" class="check" id="modal-toggle">
+<header class="header">
         <div class="container">
             <div class="header-box-one">
                 <div class="burger-menu">
                     <a href="./index.html" class="header-logo">
                         Web<span class="logo-accent">Studio</span>
                     </a>
-                    <label for="modal-toggle">
-                        <img src="./images/menu_40px.png" alt="menu">
-                    </label>
+
+                    <button type="button" class="menu-open" aria-label="Відкрити меню">
+                        <img src="./images/menu_40px.png" alt="">
+                    </button>
                 </div>
                 <nav class="header-navigation">
                     <ul class="header-nav-list">
                         <li class="header-nav-item">
-                            <a href="./index.html" class="header-nav-link">Студія</a>
+                            <a href="./index.html" class="header-nav-link-current">Студія</a>
                         </li>
                         <li class="header-nav-item">
-                            <a href="./catalog.html" class="header-nav-link-current">Портфоліо</a>
+                            <a href="./catalog.html" class="header-nav-link">Портфоліо</a>
                         </li>
                         <li class="header-nav-item">
                             <a href="#" class="header-nav-link">Контакти</a>
@@ -51,9 +51,9 @@
         </div>
         <div class="backdrop">
             <div class="modal">
-                <label for="modal-toggle" class="close">
-                    <img src="./images/close_40px.png" alt="close">
-                </label>
+                <button type="button" class="close" aria-label="Закрити меню">
+                    <img src="./images/close_40px.png" alt="">
+                </button>
                 <nav class="mobile-menu">
                     <ul class="mobile-menu-list">
                         <li class="mobile-menu-item">
@@ -98,136 +98,138 @@
             </div>
         </div>
     </header>
-    <section class="catalog">
-        <div class="container">
-            <ul class="catalog-list">
-                <li class="catalog-item">
-                    <button class="catalog-button">Усі</button>
-                </li>
-                <li class="catalog-item">
-                    <button class="catalog-button">Веб-сайти</button>
-                </li>
-                <li class="catalog-item">
-                    <button class="catalog-button">Додатки</button></li>
-                <li class="catalog-item">
-                    <button class="catalog-button">Дизайн</button>
-                </li>
-                <li class="catalog-item">
-                    <button class="catalog-button">Маркетинг</button>
-                </li>
-            </ul>
-            <ul class="products-list">
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(3).png" alt="img-1" class="products-image">
-                    <p class="ower">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Технокряк</h2>
-                        <p class="products-text">Веб-сайт</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(4).png" alt="img-2" class="products-image">
+    <main>
+        <section class="catalog">
+            <div class="container">
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <button class="catalog-button">Усі</button>
+                    </li>
+                    <li class="catalog-item">
+                        <button class="catalog-button">Веб-сайти</button>
+                    </li>
+                    <li class="catalog-item">
+                        <button class="catalog-button">Додатки</button></li>
+                    <li class="catalog-item">
+                        <button class="catalog-button">Дизайн</button>
+                    </li>
+                    <li class="catalog-item">
+                        <button class="catalog-button">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="products-list">
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(3).png" alt="img-1" class="products-image">
                         <p class="ower">
                             Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                         </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Постер New Orlean vs Golden Star</h2>
-                        <p class="products-text">Дизайн</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(5).png" alt="img-3" class="products-image">
-                        <p class="ower">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Ресторан Seafood</h2>
-                        <p class="products-text">Додаток</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(6).png" alt="img-4" class="products-image">
-                        <p class="ower">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Проєкт Prime</h2>
-                        <p class="products-text">Маркетинг</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(7).png" alt="img-5" class="products-image">
-                        <p class="ower">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Проєкт Boxes</h2>
-                        <p class="products-text">Додаток</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(8).png" alt="img-6" class="products-image">
-                        <p class="ower">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Inspiration has no Borders</h2>
-                        <p class="products-text">Веб-сайт</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(9).png" alt="img-7" class="products-image">
-                        <p class="ower">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Видання Limited Edition</h2>
-                        <p class="products-text">Дизайн</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(10).png" alt="img-8" class="products-image">
-                        <p class="ower">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Проєкт LAB</h2>
-                        <p class="products-text">Маркетинг</p>
-                    </div>
-                </li>
-                <li class="products-item">
-                    <div class="products-wrapper">
-                        <img src="./images/img(11).png" alt="img-9" class="products-image">
-                        <p class="ower">
-                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                        </p>
-                    </div>
-                    <div class="products-wrap">
-                        <h2 class="products-title">Growing Business</h2>
-                        <p class="products-text">Додаток</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Технокряк</h2>
+                            <p class="products-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(4).png" alt="img-2" class="products-image">
+                            <p class="ower">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Постер New Orlean vs Golden Star</h2>
+                            <p class="products-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(5).png" alt="img-3" class="products-image">
+                            <p class="ower">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Ресторан Seafood</h2>
+                            <p class="products-text">Додаток</p>
+                        </div>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(6).png" alt="img-4" class="products-image">
+                            <p class="ower">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Проєкт Prime</h2>
+                            <p class="products-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(7).png" alt="img-5" class="products-image">
+                            <p class="ower">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Проєкт Boxes</h2>
+                            <p class="products-text">Додаток</p>
+                        </div>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(8).png" alt="img-6" class="products-image">
+                            <p class="ower">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Inspiration has no Borders</h2>
+                            <p class="products-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(9).png" alt="img-7" class="products-image">
+                            <p class="ower">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Видання Limited Edition</h2>
+                            <p class="products-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(10).png" alt="img-8" class="products-image">
+                            <p class="ower">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Проєкт LAB</h2>
+                            <p class="products-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="products-item">
+                        <div class="products-wrapper">
+                            <img src="./images/img(11).png" alt="img-9" class="products-image">
+                            <p class="ower">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="products-wrap">
+                            <h2 class="products-title">Growing Business</h2>
+                            <p class="products-text">Додаток</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container">
             <a href="./index.html" class="footer-logo">Web<span class="logo-span">Studio</span></a>
@@ -244,5 +246,31 @@
             </ul>
         </div>
     </footer>
+    <script>
+        const mobileMenu = document.querySelector(".backdrop");
+        const openMenuButton = document.querySelector(".menu-open");
+        const closeMenuButton = document.querySelector(".close");
+
+        const openMobileMenu = () => {
+            mobileMenu.classList.add("is-open");
+            document.body.classList.add("modal-open");
+        };
+
+        const closeMobileMenu = () => {
+            mobileMenu.classList.remove("is-open");
+            document.body.classList.remove("modal-open");
+        };
+
+        openMenuButton.addEventListener("click", openMobileMenu);
+
+        closeMenuButton.addEventListener("click", closeMobileMenu);
+
+        mobileMenu.addEventListener("click", event => {
+            if (event.target === mobileMenu) {
+                closeMobileMenu();
+            }
+        });
+    </script>
+</html>
 </body>
 </html>

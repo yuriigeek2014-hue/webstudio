@@ -13,16 +13,16 @@
 </head>
 <body>
     <header class="header">
-        <input type="checkbox" class="check" id="modal-toggle">
         <div class="container">
             <div class="header-box-one">
                 <div class="burger-menu">
                     <a href="./index.html" class="header-logo">
                         Web<span class="logo-accent">Studio</span>
                     </a>
-                    <label for="modal-toggle">
-                        <img src="./images/menu_40px.png" alt="menu">
-                    </label>
+
+                    <button type="button" class="menu-open" aria-label="Відкрити меню">
+                        <img src="./images/menu_40px.png" alt="">
+                    </button>
                 </div>
                 <nav class="header-navigation">
                     <ul class="header-nav-list">
@@ -51,9 +51,9 @@
         </div>
         <div class="backdrop">
             <div class="modal">
-                <label for="modal-toggle" class="close">
-                    <img src="./images/close_40px.png" alt="close">
-                </label>
+                <button type="button" class="close" aria-label="Закрити меню">
+                    <img src="./images/close_40px.png" alt="">
+                </button>
                 <nav class="mobile-menu">
                     <ul class="mobile-menu-list">
                         <li class="mobile-menu-item">
@@ -262,6 +262,30 @@
             if (event.key === "Escape") {
                 modal.classList.remove("is-open");
                 document.body.classList.remove("modal-open");
+            }
+        });
+
+        const mobileMenu = document.querySelector(".backdrop");
+        const openMenuButton = document.querySelector(".menu-open");
+        const closeMenuButton = document.querySelector(".close");
+
+        const openMobileMenu = () => {
+            mobileMenu.classList.add("is-open");
+            document.body.classList.add("modal-open");
+        };
+
+        const closeMobileMenu = () => {
+            mobileMenu.classList.remove("is-open");
+            document.body.classList.remove("modal-open");
+        };
+
+        openMenuButton.addEventListener("click", openMobileMenu);
+
+        closeMenuButton.addEventListener("click", closeMobileMenu);
+
+        mobileMenu.addEventListener("click", event => {
+            if (event.target === mobileMenu) {
+                closeMobileMenu();
             }
         });
     </script>
