@@ -488,8 +488,8 @@ body.modal-open {
 .hero {
     background:
         linear-gradient(
-            rgba(47, 48, 58, 0.6),
-            rgba(47, 48, 58, 0.6)
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
         ),
         url("../images/hero-bg.png") center / cover no-repeat;
 
@@ -680,8 +680,9 @@ body.modal-open {
     width: 100%;
     display: flex;
     flex-direction: column;
+    border-radius: 0 0 4px 4px;
     background-color: var(--secondary-title-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
 }
 
 .team-image {
@@ -842,6 +843,7 @@ body.modal-open {
     border-radius: 4px;
     background: var(--third-color);
     cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .catalog-button:hover {
@@ -860,12 +862,12 @@ body.modal-open {
     border: 1px solid #EEE;
     cursor: pointer;
     background-color: var(--secondary-title-color);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
     transition: transform .35s ease, box-shadow .35s ease;
 }
 
 .products-item:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .22);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12), 0 5px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
     transform: translateY(-8px);
 }
 
