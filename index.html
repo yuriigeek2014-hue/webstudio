@@ -1,293 +1,546 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header-box-one">
-                <div class="burger-menu">
-                    <a href="./index.html" class="header-logo">
-                        Web<span class="logo-accent">Studio</span>
-                    </a>
+      <div class="container">
+        <div class="header-box-one">
+          <div class="burger-menu">
+            <a href="./index.html" class="header-logo">
+              Web<span class="logo-accent">Studio</span>
+            </a>
 
-                    <button type="button" class="menu-open" aria-label="Відкрити меню">
-                        <img src="./images/menu_40px.png" alt="">
-                    </button>
-                </div>
-                <nav class="header-navigation">
-                    <ul class="header-nav-list">
-                        <li class="header-nav-item">
-                            <a href="./index.html" class="header-nav-link-current">Студія</a>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="./catalog.html" class="header-nav-link">Портфоліо</a>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-link">Контакти</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-box-two">
-                <ul class="header-info-list">
-                    <li class="header-info-item">
-                        <a href="#" class="header-info-link">info@devstudio.com</a>
-                    </li>
-                    <li class="header-info-item">
-                        <a href="#" class="header-info-link">+38-096-111-11-11</a>
-                    </li>
-                </ul>
-            </div>
+            <button type="button" class="menu-open" aria-label="Відкрити меню">
+              <img src="./images/menu_40px.png" alt="menu" />
+            </button>
+          </div>
+          <nav class="header-navigation">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="./index.html" class="header-nav-link-current"
+                  >Студія</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="./catalog.html" class="header-nav-link">Портфоліо</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="backdrop">
-            <div class="modal">
-                <button type="button" class="close" aria-label="Закрити меню">
-                    <img src="./images/close_40px.png" alt="">
-                </button>
-                <nav class="mobile-menu">
-                    <ul class="mobile-menu-list">
-                        <li class="mobile-menu-item">
-                            <a href="./index.html" class="mobile-menu-link mobile-menu-link-current">
-                                Студія
-                            </a>
-                        </li>
-                        <li class="mobile-menu-item">
-                            <a href="./catalog.html" class="mobile-menu-link">
-                                Портфоліо
-                            </a>
-                        </li>
-                        <li class="mobile-menu-item">
-                            <a href="#" class="mobile-menu-link">
-                                Контакти
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="mobile-menu-contacts">
-                    <a href="#" class="mobile-phone">
-                        +38 096 111 11 11
-                    </a>
-                    <a href="#" class="mobile-email">
-                        info@devstudio.com
-                    </a>
-                </div>
-                <ul class="mobile-social-list">
-                    <li class="mobile-social-item">
-                        <a href="#" class="mobile-social-link">Instagram</a>
-                    </li>
-                    <li class="mobile-social-item">
-                        <a href="#" class="mobile-social-link">Twitter</a>
-                    </li>
-                    <li class="mobile-social-item">
-                        <a href="#" class="mobile-social-link">Facebook</a>
-                    </li>
-                    <li class="mobile-social-item">
-                        <a href="#" class="mobile-social-link">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="header-box-two">
+          <ul class="header-info-list">
+            <li class="header-info-item">
+              <a href="#" class="header-info-link">
+                <svg class="header-icons">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header-info-item">
+              <a href="#" class="header-info-link">
+                <svg class="header-icons">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38-096-111-11-11
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="backdrop">
+        <div class="modal">
+          <button type="button" class="close" aria-label="Закрити меню">
+            <img src="./images/close_40px.png" alt="" />
+          </button>
+          <nav class="mobile-menu">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu-link mobile-menu-link-current">
+                  Студія
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./catalog.html" class="mobile-menu-link">
+                  Портфоліо
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link"> Контакти </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-contacts">
+            <a href="#" class="mobile-phone"> +38 096 111 11 11 </a>
+            <a href="#" class="mobile-email"> info@devstudio.com </a>
+          </div>
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a href="#" class="mobile-social-link">Instagram</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="#" class="mobile-social-link">Twitter</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="#" class="mobile-social-link">Facebook</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="#" class="mobile-social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <div class="contact-backdrop" data-modal>
-        <div class="contact-modal">
-            <button type="button" class="contact-close" data-modal-close aria-label="Закрити"><img src="./images/close_40px.png" alt="close"></button>
-            <h2 class="contact-title">
-                Залиште свої дані, ми вам передзвонимо
-            </h2>
-            <form class="contact-form">
-                <label class="contact-label">
-                    <span class="contact-label-text">Ім'я</span>
-                    <input type="text" name="name" class="contact-input">
-                </label>
-                <label class="contact-label">
-                    <span class="contact-label-text">Телефон</span>
-                    <input type="tel" name="phone" class="contact-input">
-                </label>
-                <label class="contact-label">
-                    <span class="contact-label-text">Пошта</span>
-                    <input type="email" name="email" class="contact-input">
-                </label>
-                <label class="contact-label">
-                    <span class="contact-label-text">Коментар</span>
-                    <textarea name="comment" class="contact-textarea" placeholder="Введіть текст"></textarea>
-                </label>
-                <label class="contact-policy">
-                    <input type="checkbox" name="policy">
-                    <span>Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></span>
-                </label>
-                <button type="submit" class="contact-button">Відправити</button>
-            </form>
-        </div>
+      <div class="contact-modal">
+        <button
+          type="button"
+          class="contact-close"
+          data-modal-close
+          aria-label="Закрити"
+        >
+          <img src="./images/close_40px.png" alt="close" />
+        </button>
+        <h2 class="contact-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="contact-form">
+        <label class="contact-label">
+            <label class="contact-label">
+            <span class="contact-label-text">Ім'я</span>
+            <span class="contact-input-wrapper">
+                <input type="text" name="name" class="contact-input"/>
+                <svg class="contact-input-icon">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+                </svg>
+            </span>
+            </label>
+            <label class="contact-label">
+            <span class="contact-label-text">Телефон</span>
+            <span class="contact-input-wrapper">
+                <input type="tel" name="phone" class="contact-input"/>
+                <svg class="contact-input-icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+            </span>
+            </label>
+            <label class="contact-label">
+            <span class="contact-label-text">Пошта</span>
+            <span class="contact-input-wrapper">
+                <input type="email" name="email" class="contact-input" />
+                <svg class="contact-input-icon">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+            </span>
+            </label>
+          <label class="contact-label">
+            <span class="contact-label-text">Коментар</span>
+            <textarea
+              name="comment"
+              class="contact-textarea"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="contact-policy">
+            <input type="checkbox" name="policy" />
+            <span
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a></span
+            >
+          </label>
+          <button type="submit" class="contact-button">Відправити</button>
+        </form>
+      </div>
     </div>
     <main class="main">
-        <section class="hero">
-            <div class="container">
-                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-button" data-modal-open>
-                    Замовити послугу
-                </button>
-            </div>
-        </section>
-        <section class="advanteges">
-            <div class="container">
-                <ul class="advanteges-content">
-                    <li class="advanteges-item">
-                        <h2 class="advanteges-secondary-title">УВАГА ДО ДЕТАЛЕЙ</h2>
-                        <p class="advanteges-text">
-                        Ідейні міркування, і навіть початок повсякденної роботи з формування позиції. 
-                        </p>
-                    </li>
-                    <li class="advanteges-item">
-                        <h2 class="advanteges-secondary-title">ПУНКТУАЛЬНІСТЬ</h2>
-                        <p class="advanteges-text">
-                            Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                        </p>
-                    </li>
-                    <li class="advanteges-item">
-                        <h2 class="advanteges-secondary-title">ПЛАНУВАННЯ</h2>
-                        <p class="advanteges-text">
-                            Так само консультація з широким активом значною мірою зумовлює.
-                        </p>
-                    </li>
-                    <li class="advanteges-item">
-                        <h2 class="advanteges-secondary-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-                        <p class="advanteges-text">
-                            Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="work">
-            <div class="container">
-                <h2 class="work-title">Чим ми займаємося</h2>
-                <ul class="work-list">
-                    <li class="work-item">
-                        <img src="./images/img_1.png" alt="img1" class="work-images">
-                    </li>
-                    <li class="work-item">
-                        <img src="./images/img_2.png" alt="img2" class="work-images">
-                    </li>
-                    <li class="work-item">
-                        <img src="./images/img_3.png" alt="img3" class="work-images">
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="team">
-            <div class="container">
-                <h2 class="team-title">Наша команда</h2>
-                <ul class="team-list">
-                    <li class="team-item">
-                        <img src="./images/worker_1.jpg" alt="worker1" class="team-image">
-                        <div class="team-item-text">
-                            <h3 class="team-caption">Ігор Дем'яненко</h3>
-                            <p class="team-info">Product Designer</p>
-                        </div>
-                    </li>
-                    <li class="team-item">
-                        <img src="./images/worker_2.jpg" alt="worker2" class="team-image">
-                        <div class="team-item-text">
-                            <h3 class="team-caption">Ольга Рєпіна</h3>
-                            <p class="team-info">Frontend Developer</p>
-                        </div>
-                    </li>
-                    <li class="team-item">
-                        <img src="./images/worker_3.jpg" alt="worker3" class="team-image">
-                        <div class="team-item-text">
-                            <h3 class="team-caption">Микола Тарасов</h3>
-                            <p class="team-info">Marketing</p>
-                        </div>
-                    </li>
-                    <li class="team-item">
-                        <img src="./images/worker_4.jpg" alt="worker4" class="team-image">
-                        <div class="team-item-text">
-                            <h3 class="team-caption">Михайло Єрмаков</h3>
-                            <p class="team-info">UI Designer</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
+      <section class="hero">
         <div class="container">
-            <a href="./index.html" class="footer-logo">Web<span class="logo-span">Studio</span></a>
-            <ul class="footer-list">
-                <li class="footer-item-1">
-                    <a href="#" class="footer-link-1">м. Київ, пр-т Лесі Українки, 26</a>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
+        </div>
+      </section>
+      <section class="advanteges">
+        <div class="container">
+            <ul class="advanteges-content">
+            <li class="advanteges-item">
+                <div class="advanteges-icon-box">
+                <svg class="advanteges-icon">
+                    <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                </svg>
+                </div>
+                <h2 class="advanteges-secondary-title">
+                УВАГА ДО ДЕТАЛЕЙ
+                </h2>
+                <p class="advanteges-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+                </p>
+            </li>
+            <li class="advanteges-item">
+                <div class="advanteges-icon-box">
+                <svg class="advanteges-icon">
+                    <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+                </div>
+                <h2 class="advanteges-secondary-title">
+                ПУНКТУАЛЬНІСТЬ
+                </h2>
+                <p class="advanteges-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+                </p>
+            </li>
+            <li class="advanteges-item">
+                <div class="advanteges-icon-box">
+                <svg class="advanteges-icon">
+                    <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+                </div>
+                <h2 class="advanteges-secondary-title">
+                ПЛАНУВАННЯ
+                </h2>
+                <p class="advanteges-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+                </p>
+            </li>
+            <li class="advanteges-item">
+                <div class="advanteges-icon-box">
+                <svg class="advanteges-icon">
+                    <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+                </div>
+                <h2 class="advanteges-secondary-title">
+                СУЧАСНІ ТЕХНОЛОГІЇ
+                </h2>
+                <p class="advanteges-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+                </p>
+            </li>
+            </ul>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container">
+          <h2 class="work-title">Чим ми займаємося</h2>
+          <ul class="work-list">
+            <li class="work-item">
+              <img src="./images/img_1.png" alt="img1" class="work-images" />
+            </li>
+            <li class="work-item">
+              <img src="./images/img_2.png" alt="img2" class="work-images" />
+            </li>
+            <li class="work-item">
+              <img src="./images/img_3.png" alt="img3" class="work-images" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <h2 class="team-title">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <img src="./images/worker_1.jpg" alt="worker1" class="team-image"/>
+              <div class="team-item-text">
+                <h3 class="team-caption">Ігор Дем'яненко</h3>
+                <p class="team-info">Product Designer</p>
+                <ul class="team-items">
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img src="./images/worker_2.jpg" alt="worker2" class="team-image"/>
+              <div class="team-item-text">
+                <h3 class="team-caption">Ольга Рєпіна</h3>
+                <p class="team-info">Frontend Developer</p>
+                <ul class="team-items">
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img src="./images/worker_3.jpg" alt="worker3" class="team-image"/>
+              <div class="team-item-text">
+                <h3 class="team-caption">Микола Тарасов</h3>
+                <p class="team-info">Marketing</p>
+                <ul class="team-items">
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img src="./images/worker_4.jpg" alt="worker4" class="team-image"/>
+              <div class="team-item-text">
+                <h3 class="team-caption">Михайло Єрмаков</h3>
+                <p class="team-info">UI Designer</p>
+                <ul class="team-items">
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-elem">
+                        <a href="" class="team-link">
+                            <svg class="team-icons">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="container">
+            <h3 class="clients-title">Постійні клієнти</h3>
+            <ul class="clients-list">
+                <li class="clients-item">
+                    <a href="" class="clients-link">
+                        <svg class="clients-icons">
+                            <use href="./images/symbol-defs.svg#icon-logo"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="footer-item-2">
-                    <a href="#" class="footer-link-2">info@devstudio.com</a>
+                <li class="clients-item">
+                    <a href="" class="clients-link">
+                        <svg class="clients-icons">
+                            <use href="./images/symbol-defs.svg#icon-logotwo"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="footer-item-3">
-                    <a href="#" class="footer-link-3">+38-096-111-11-11</a>
+                <li class="clients-item">
+                    <a href="" class="clients-link">
+                        <svg class="clients-icons">
+                            <use href="./images/symbol-defs.svg#icon-logothree"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="" class="clients-link">
+                        <svg class="clients-icons">
+                            <use href="./images/symbol-defs.svg#icon-logofour"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="" class="clients-link">
+                        <svg class="clients-icons">
+                            <use href="./images/symbol-defs.svg#icon-logofive"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="" class="clients-link">
+                        <svg class="clients-icons">
+                            <use href="./images/symbol-defs.svg#icon-logosix"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </div>
-    </footer>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+            <a href="./index.html" class="footer-logo">Web<span class="logo-span">Studio</span></a>
+            <ul class="footer-list">
+                <li><a href="#" class="footer-link-1">м. Київ, пр-т Лесі Українки, 26</a></li>
+                <li><a href="#" class="footer-link-2">info@devstudio.com</a></li>
+                <li><a href="#" class="footer-link-3">+38 096 111 11 11</a></li>
+            </ul>
+            </div>
+            <div class="footer-social">
+            <p class="footer-social-title">ПРИЄДНУЙТЕСЬ</p>
+            <ul class="footer-social-list">
+                <li><a href="#" class="footer-social-link"><svg class="footer-social-icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                <li><a href="#" class="footer-social-link"><svg class="footer-social-icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+                <li><a href="#" class="footer-social-link"><svg class="footer-social-icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                <li><a href="#" class="footer-social-link"><svg class="footer-social-icon"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+            </ul>
+            </div>
+            <div class="footer-subscribe">
+            <p class="footer-subscribe-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+            <form class="footer-form">
+                <input type="email" class="footer-input" placeholder="E-mail">
+                <button type="submit" class="footer-button">Підписатися<svg class="footer-send-icon"><use href="./images/symbol-defs.svg#icon-send"></use></svg></button>
+            </form>
+            </div>
+        </div>
+        </footer>
     <script>
-        const modal = document.querySelector("[data-modal]");
-        const openButton = document.querySelector("[data-modal-open]");
-        const closeButton = document.querySelector("[data-modal-close]");
+      const modal = document.querySelector("[data-modal]");
+      const openButton = document.querySelector("[data-modal-open]");
+      const closeButton = document.querySelector("[data-modal-close]");
 
-        openButton.addEventListener("click", () => {
-            modal.classList.add("is-open");
-            document.body.classList.add("modal-open");
-        });
+      openButton.addEventListener("click", () => {
+        modal.classList.add("is-open");
+        document.body.classList.add("modal-open");
+      });
 
-        closeButton.addEventListener("click", () => {
-            modal.classList.remove("is-open");
-            document.body.classList.remove("modal-open");
-        });
+      closeButton.addEventListener("click", () => {
+        modal.classList.remove("is-open");
+        document.body.classList.remove("modal-open");
+      });
 
-        modal.addEventListener("click", event => {
-            if (event.target === modal) {
-                modal.classList.remove("is-open");
-                document.body.classList.remove("modal-open");
-            }
-        });
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.classList.remove("is-open");
+          document.body.classList.remove("modal-open");
+        }
+      });
 
-        document.addEventListener("keydown", event => {
-            if (event.key === "Escape") {
-                modal.classList.remove("is-open");
-                document.body.classList.remove("modal-open");
-            }
-        });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          modal.classList.remove("is-open");
+          document.body.classList.remove("modal-open");
+        }
+      });
 
-        const mobileMenu = document.querySelector(".backdrop");
-        const openMenuButton = document.querySelector(".menu-open");
-        const closeMenuButton = document.querySelector(".close");
+      const mobileMenu = document.querySelector(".backdrop");
+      const openMenuButton = document.querySelector(".menu-open");
+      const closeMenuButton = document.querySelector(".close");
 
-        const openMobileMenu = () => {
-            mobileMenu.classList.add("is-open");
-            document.body.classList.add("modal-open");
-        };
+      const openMobileMenu = () => {
+        mobileMenu.classList.add("is-open");
+        document.body.classList.add("modal-open");
+      };
 
-        const closeMobileMenu = () => {
-            mobileMenu.classList.remove("is-open");
-            document.body.classList.remove("modal-open");
-        };
+      const closeMobileMenu = () => {
+        mobileMenu.classList.remove("is-open");
+        document.body.classList.remove("modal-open");
+      };
 
-        openMenuButton.addEventListener("click", openMobileMenu);
+      openMenuButton.addEventListener("click", openMobileMenu);
 
-        closeMenuButton.addEventListener("click", closeMobileMenu);
+      closeMenuButton.addEventListener("click", closeMobileMenu);
 
-        mobileMenu.addEventListener("click", event => {
-            if (event.target === mobileMenu) {
-                closeMobileMenu();
-            }
-        });
+      mobileMenu.addEventListener("click", (event) => {
+        if (event.target === mobileMenu) {
+          closeMobileMenu();
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
