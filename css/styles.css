@@ -308,6 +308,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition-duration: 500ms;
 }
 
 .header-info-link:hover {
@@ -980,12 +981,13 @@ body.modal-open {
     border-radius: 4px;
     background: var(--third-color);
     cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    transition-duration: 350ms;
 }
 
 .catalog-button:hover {
     color: var(--secondary-title-color);
     background-color: var(--button-color);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .products-list {
@@ -999,7 +1001,6 @@ body.modal-open {
     border: 1px solid #EEE;
     cursor: pointer;
     background-color: var(--secondary-title-color);
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
     transition: transform .35s ease, box-shadow .35s ease;
 }
 
@@ -1085,7 +1086,7 @@ body.modal-open {
 .team-icons {
     width: 20px;
     height: 20px;
-    fill: #757575;
+    fill: #AFB1B8;
     transition: fill 350ms ease;
 }
 
@@ -1141,8 +1142,7 @@ body.modal-open {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border: 1px solid #AF8188;
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
 
     transition: border-color 250ms ease;
@@ -1155,7 +1155,7 @@ body.modal-open {
 .clients-icons {
     width: 106px;
     height: 60px;
-    fill: #757575;
+    fill: #AFB1B8;
     transition: fill 250ms ease;
 }
 
